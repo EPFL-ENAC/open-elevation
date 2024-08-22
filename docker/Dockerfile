@@ -1,6 +1,6 @@
 FROM ghcr.io/osgeo/gdal:ubuntu-small-3.7.3
 
-ENV TZ=Europe/Madrid
+ENV TZ=Europe/Zurich
 ENV CPLUS_INCLUDE_PATH=/usr/include/gdal
 ENV CINCLUDE_PATH=/usr/include/gdal
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
